@@ -21,7 +21,7 @@ public class EmbeddedDevice : Device
     public void Connect()
     {
         if (network.Contains("MD Ltd."))
-            Console.WriteLine($"Connected to {network} with IP {ip}.");
+            Console.WriteLine($"connected to {network}");
         else throw new ConnectionException();
     }
 

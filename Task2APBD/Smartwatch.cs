@@ -10,7 +10,7 @@ public class Smartwatch:Device,IPowerNotifier
     public void setBattery(int percentage)
     {
         if (percentage < 0 || percentage > 100)
-            throw new ArgumentException("Invalid input");
+            throw new ArgumentException("invalid input");
 
         if (percentage < 20)
             lowBattery();
@@ -30,12 +30,12 @@ public class Smartwatch:Device,IPowerNotifier
     }
     public void lowBattery()
     {
-        Console.WriteLine("Battery less than 20%");
+        Console.WriteLine("battery <20%");
     }
 
     public override string ToString()
     {
-        return base.ToString() + $" Battery: {battery}%";
+        return base.ToString() + $" battery: {battery}%";
     }
 
 
